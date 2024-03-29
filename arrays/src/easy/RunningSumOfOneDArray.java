@@ -1,6 +1,6 @@
 package easy;
 
-import utils.Functions;
+import java.util.Arrays;
 
 public class RunningSumOfOneDArray {
   public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class RunningSumOfOneDArray {
     int[] nums = { 1, 2, 3, 4 };
     int[] result = runningSum(nums);
 
-    System.out.println(Functions.toString(result));
+    System.out.println(Arrays.toString(result));
   }
 
   static int[] runningSum(int[] nums) {

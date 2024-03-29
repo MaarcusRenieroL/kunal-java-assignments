@@ -1,13 +1,13 @@
 package easy;
 
-import utils.Functions;
+import java.util.Arrays;
 
 public class BuildArrayFromPermutation {
   public static void main(String[] args) {
     int[] nums = { 0, 2, 1, 5, 3, 4 };
     int[] result = buildArray(nums);
 
-    System.out.println(Functions.toString(result));
+    System.out.println(Arrays.toString(result));
 
   }
 
