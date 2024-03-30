@@ -1,3 +1,5 @@
+package easy;
+
 public class LinkedListCycle {
 
   static boolean hasCycle(Node head) {

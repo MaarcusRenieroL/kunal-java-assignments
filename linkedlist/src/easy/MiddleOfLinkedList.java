@@ -1,27 +1,32 @@
 package easy;
 
-public class ConvertBinaryNumberInALinkedListToNumber {
+public class MiddleOfLinkedList {
   public static void main(String[] args) {
     LL ll = new LL();
 
     ll.insert(1);
-    ll.insert(0);
-    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+    ll.insert(5);
 
     Node head = ll.head;
 
-    System.out.println(getDecimalValue(head));
+    Node middle = middleNode(head);
+
+    System.out.println(middle.val);
   }
 
-  static int getDecimalValue(Node head) {
-    int result = 0;
+  static Node middleNode(Node head) {
+    Node slow = head;
+    Node fast = head;
 
-    while (head != null) {
-      result = result * 2 + head.val;
-      head = head.next;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
     }
 
-    return result;
+    return slow;
   }
 }
 

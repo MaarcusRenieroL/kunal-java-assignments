@@ -1,3 +1,5 @@
+package easy;
+
 public class DeleteNodeInALinkedList {
   public static void main(String[] args) {
     LL ll = new LL();
